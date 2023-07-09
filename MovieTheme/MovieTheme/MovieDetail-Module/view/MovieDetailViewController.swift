@@ -12,7 +12,7 @@ class MovieDetailViewController: UIViewController {
     
     var movieDetailPresenter: ViewToPresenterMovieDetailProtocol?
     
-    var stackView = UIStackView() 
+    var stackView = UIStackView()
     var movieTitleLabel = UILabel()
     var movieOverviewLabel = UILabel()
     var movieRatingLabel = UILabel()
@@ -33,19 +33,12 @@ class MovieDetailViewController: UIViewController {
         movieRatingLabel.text = String(describing: movieData.voteAverage)
         movieOverviewLabel.text = movieData.overview
         
-//        view.addSubview(moviePosterImage)
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.spacing = 10
+        
         [self.movieTitleLabel, self.movieRatingLabel, self.movieOverviewLabel].forEach {
             stackView.addArrangedSubview($0)
-        }
-        
-        movieTitleLabel.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(16)
-        }
-        movieRatingLabel.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(16)
-        }
-        movieOverviewLabel.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(16)
         }
     }
 }

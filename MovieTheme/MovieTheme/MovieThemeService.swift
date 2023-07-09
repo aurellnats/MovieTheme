@@ -30,8 +30,3 @@ public struct MovieThemeService {
         }
     }
 }
-
-//curl --request GET \
-//     --url 'https://api.themoviedb.org/3/genre/movie/list?language=en' \
-//     --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMzhlYThjN2Y5OWZjYmI2MWEwOGFiOWE5NDNlNGJhNiIsInN1YiI6IjY0YTkyZjliNjZhMGQzMDEwMGQ4OTVmNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hExpVQR8nD6tm827e-wsIYVnGoMwKH9f1djmDo8Xi5Q' \
-//     --header 'accept: application/json'

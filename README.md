@@ -1,4 +1,4 @@
-# MovieTheme
+# MovieTheme - Mandiri iOS - Aurelia
 
 Notes: 
 App doesn't fully meet the requirements yet such as:
